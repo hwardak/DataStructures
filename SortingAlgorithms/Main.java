@@ -2,7 +2,12 @@ import java.util.Random;
 import java.util.Scanner;
 
 
-
+/**
+ * Main menu an interface to implement and demo sorting algorithms.
+ * 
+ * @author HWardak
+ *
+ */
 public class Main {
 
 	private static int size = 1000;
@@ -28,7 +33,11 @@ public class Main {
 	}
 
 
-
+	/**
+	 * Switch case to handle menu option selections.
+	 * 
+	 * @param menuOptionSelection
+	 */
 	private static void processMenuOptionSelection(int menuOptionSelection) {
 		switch (menuOptionSelection) {
 		case 1:  
@@ -61,7 +70,10 @@ public class Main {
 
 	 */
 
-
+	/**
+	 * Will format (for readability), and print the array. 
+	 * Useful in confirming sorting algorithms results.
+	 */
 	private static void printArray() {
 		String arrayString = "";
 		for(int i=0; i < numbersArray.length; i++){
@@ -73,7 +85,12 @@ public class Main {
 	}
 
 
-
+	/**
+	 * Presents the user with a menu, awaits their selection, and returns the 
+	 * selection.
+	 * 
+	 * @return userSelection
+	 */
 	private static int printMenuOption() {
 		System.out.println("Menu \n"
 				+ "1) Re-instantiate array value. \n"
@@ -85,21 +102,28 @@ public class Main {
 
 
 		scanner = new Scanner(System.in);
-		int selection = scanner.nextInt();
+		int userSelection = scanner.nextInt();
 
-		return selection;
+		return userSelection;
 
 	}
 
 
-
+	/**
+	 * Initializes an Integer[] of size 1000.
+	 * 
+	 * @param arraySize
+	 */
 	private static void initializeArray(int arraySize){
 		numbersArray = new Integer[arraySize];
 		System.out.println("Array created size " + arraySize +"...");
 	}
 
 
-
+	/**
+	 * Instantiates values into local Integer[]. Values are limited to between
+	 * 0 and 30.
+	 */
 	private static void instantiateArrayValues(){
 		Random random = new Random();
 		for (int i=0; i< numbersArray.length; i++){
