@@ -2,7 +2,11 @@ import java.util.Random;
 import java.util.Scanner;
 
 /**
- * 
+ * BinarySearchMain is the user interface to implement and demo the Binary Search Algorithm.
+ * An Interger[] of size 100 is initialized, values (0 -50) are randomly instantiated, the 
+ * array is sorted, and made available for a Binary Search. 
+ * The user can select the Binary Search option, enter an integer between, and the program 
+ * will return the index(es) if the integer is within the array. 
  * @author HWardak
  *
  */
@@ -92,6 +96,10 @@ public class BinarySearchMain {
 
 	}
 	
+	/**
+	* Simple method to read in and return the user's input. 
+	* For use with the menu, and entering the desired integer to search for.
+	*/
 	private static int getUserInput(){
 		scanner = new Scanner(System.in);
 		int userSelection = scanner.nextInt();
