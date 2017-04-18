@@ -1,5 +1,13 @@
 import java.util.Scanner;
 
+/**
+ * The purpose of this program is to demonstrate Linked List data structure. 
+ * User is promted for a int, int is converted to binary, each digit of the 
+ * binary string is assigned a Node within the Linked List. The list is then
+ * sequencially traversed, printing each Nodes data.
+ *
+ * HWardak
+ */
 public class LinkedListMain {
 	private static int x;
 	private static int xx;
