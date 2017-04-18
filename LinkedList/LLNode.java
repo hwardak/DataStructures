@@ -1,4 +1,10 @@
 
+/**
+ * Linked List Node, contains the 'data' and a pointer to the next Node in 
+ * in sequence.
+ *
+ * HWardak
+ */
 public class LLNode {
 	private String data;
 	private LLNode next;

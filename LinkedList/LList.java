@@ -1,4 +1,9 @@
 
+/**
+ * Linked List. This class contains functions to manipulate the Linked List.
+ *
+ * HWardak
+ */
 public class LList {
 	private LLNode head;
 	
