@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class BinaryTreeExample {
+public class BinaryTreeMain {
 
 	public static void main(String[] args) {
 		BinaryTree tree = new BinaryTree();
